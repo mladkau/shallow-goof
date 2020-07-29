@@ -1,6 +1,2 @@
-FROM node:12.18.2
-RUN mkdir -p /srv/app
-RUN mkdir -p /app
-COPY package.json /srv/app/package.json
-COPY composer.* /srv/composer/
-COPY go.* /go-app/
+FROM node:12.19.7
+RUN mkdir -p /srv/appRUN mkdir -p /appCOPY package.json /srv/app/package.jsonCOPY composer.* /srv/composer/COPY go.* /go-app/
